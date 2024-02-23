@@ -23,7 +23,8 @@ header{
    display: flex;
    align-items: center;
    line-height: 25px;
-   background-color: aquamarine;
+   padding-left: 20px;
+ 
 }
 
 .glam{
@@ -41,18 +42,37 @@ header{
 }
 
 .search_bag{
-    width:60%;
+    
     height: 50px;;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: aquamarine;
+    justify-content:space-around;
+    /* background-color: aquamarine; */
+    gap: 10px;
+    padding-right: 20px;
 }
 
-.drop-1{
-    width: 100px;;
-    height: 50px;
+.drop_1{
+    width: 200px;;
+    height: 30px;
     
     align-items: center;
     justify-content: center;
+}
+
+.search_btn{
+    width: 100px;
+    height: 30px;
+    background-color:#D4AF37;
+    color:rgb(95, 7, 36);
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: bolder;
+    text-shadow: 0cqmax;
+
+
+}
+.search_btn:hover{
+    background-color: rgb(95, 7, 36);
+    color:#D4AF37;
 }
