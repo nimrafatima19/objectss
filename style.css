@@ -24,6 +24,7 @@ header{
    align-items: center;
    line-height: 25px;
    padding-left: 20px;
+   font-family: cursive;
  
 }
 
@@ -53,8 +54,9 @@ header{
 }
 
 .drop_1{
-    width: 200px;;
+    
     height: 30px;
+    font-size: 1rem;
     
     align-items: center;
     justify-content: center;
@@ -75,4 +77,22 @@ header{
 .search_btn:hover{
     background-color: rgb(95, 7, 36);
     color:#D4AF37;
+}
+
+@media screen and (max-width:730px){
+    .logo{
+        width:100%;
+        justify-content: center;
+    }
+    .glam{
+       width: 100%;
+    }
+    .search_bag{
+       width:100%;
+       justify-content: center;
+       padding: 10px;
+}
+.drop_1{
+    font-size: 12px;
+}
 }
