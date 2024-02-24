@@ -97,3 +97,14 @@ header{
     font-size: 12px;
 }
 }
+
+.imgs{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px;
+}
+.gif{
+    width:100%;
+}
