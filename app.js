@@ -43,7 +43,7 @@ var purseList ={
     Fendi:{
         shoulderbags:{
             name:"Shoulder Bags",
-            price:"PKR 1,0000",
+            price:"PKR 10,000",
             image:"images/fendi1.png"
         },
         bagpacks:{
