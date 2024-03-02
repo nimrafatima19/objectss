@@ -69,8 +69,11 @@ var purseList ={
 
     }
 }
+var brand = document.getElementById("brand");
+var brandName = document.getElementById("brand-name");
 var main = document.getElementById("main");
 for(var key in purseList){
+    brand.innerHTML += `<option value= "${key}">${key}</option>`
     for(var key1 in purseList[key]){
         var obj = purseList[key][key1];
         main.innerHTML +=`
@@ -80,6 +83,12 @@ for(var key in purseList){
  <div class="card_type">${obj.price}</div>
  </div>
         `
+    }
+}
+function setName(){
+    brandName.innerHTML = "";
+    for(var key in purseList[brand.value]){
+        brandName.innerHTML += `<option value= "${key}">${key}</option>`
     }
 }
 
