@@ -76,6 +76,7 @@ for(var key in purseList){
     brand.innerHTML += `<option value= "${key}">${key}</option>`
     for(var key1 in purseList[key]){
         var obj = purseList[key][key1];
+        console.log(purseList[key][key1]);
         main.innerHTML +=`
         <div class="card1">
  <div class="cardImg"><img src="${obj.image}"></div>
@@ -91,7 +92,22 @@ function setName(){
         brandName.innerHTML += `<option value= "${key}">${key}</option>`
     }
 }
-
+function search(){
+    var gif= document.getElementById("gif")
+    var search = document.getElementById("search");
+    gif.style.display="none";
+    main.style.display="none";
+    search.style.display="flex";
+   
+    var purse=purseList[brand.value][brandName.value]
+    search.innerHTML=`
+    <div class="card1">
+    <div class="cardImg"><img src="${purse.image}"></div>
+    <div class="card_price">${purse.name} </div>
+    <div class="card_type">${purse.price}</div>
+    </div>
+    `
+}
 
 
 
